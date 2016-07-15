@@ -341,8 +341,25 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-opacity,.w3-hover-opacity:hover{opacity:0.60;filter:alpha(opacity=60)}
 .w3-text-shadow{text-shadow:1px 1px 0 #444}.w3-text-shadow-white{text-shadow:1px 1px 0 #ddd}</style>
 
+<script>
+  openTab("Wurst");
 
-<body class="w3-container"></body>
+function openTab(tabName) {
+    var i;
+    var x = document.getElementsByClassName("tab");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    document.getElementById(tabName).style.display = "block"; 
+}
+</script>
+
+<ul class="w3-navbar">
+  <li><a href="#" onclick="openTab('Wurst')">Wurst</a></li>
+  <li><a href="#" onclick="openTab('Minecraft Server')">Minecraft Server</a></li>
+</ul>
+
+<div class="tab">
 <a class="w3-btn w3-btn-block w3-red" href="https://github.com/Wurst-Imperium/Wurst-Client-for-MC-1.10.X/releases/download/v4.0/Wurst-Client-v4.0.zip">Wurst 4.0</a>
 <a class="w3-btn w3-btn-block w3-red" href="https://github.com/Wurst-Imperium/Wurst-Client-for-MC-1.9.X/releases/download/v3.4.1/Wurst-Client-v3.4.1.zip">Wurst 3.4.1</a>
 <a class="w3-btn w3-btn-block w3-green" href="https://s3.amazonaws.com/Minecraft.Download/versions/1.10.2/minecraft_server.1.10.2.jar">Minecraft Server 1.10.2</a>
@@ -355,5 +372,5 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 <a class="w3-btn w3-btn-block w3-red" href="https://github.com/Wurst-Imperium/Wurst-Client-for-MC-1.9.X/releases/download/v3.0pre3/Wurst-Client-v3.0pre3.zip">Wurst 3.0pre3</a>
 <a class="w3-btn w3-btn-block w3-red" href="https://github.com/Wurst-Imperium/Wurst-Client-for-MC-1.9.X/releases/download/v3.0pre2/Wurst-Client-v3.0pre2.zip">Wurst 3.0pre2</a>
 <a class="w3-btn w3-btn-block w3-red" href="https://github.com/Wurst-Imperium/Wurst-Client-for-MC-1.9.X/releases/download/v3.0pre1/Wurst-Client-v3.0pre1.zip">Wurst 3.0pre1</a>
-</body>
+</div>
 
